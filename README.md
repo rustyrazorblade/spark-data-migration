@@ -15,11 +15,7 @@ favorite_food text
 );
 
 create table tutorial.food_to_user_index ( food text, user text, primary key (food, user));
-```
 
-Let's put in some sample data:
-
-```
 insert into user (name, favorite_food) values ('Jon', 'bacon');
 insert into user (name, favorite_food) values ('Luke', 'steak');
 insert into user (name, favorite_food) values ('Al', 'salmon');
