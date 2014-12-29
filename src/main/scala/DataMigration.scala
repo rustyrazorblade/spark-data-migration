@@ -16,11 +16,11 @@ object DataMigration {
 
     val sc = new SparkContext("local", "test", conf)
 
-    case class FoodToUserIndex(food: String, name: String)
+    case class FoodToUserIndex(food: String, user: String)
 
     val user_table = sc.cassandraTable("tutorial", "user")
 
-    val food_index = user_table.map(r => new FoodToUserIndex(r.getString("favorite_food"), r.getString("user")))
+    val food_index = user_table.map(r => new FoodToUserIndex(r.getString("favorite_food"), r.getString("name")))
 
     food_index.saveToCassandra("tutorial", "food_to_user_index")
 
