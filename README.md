@@ -1,4 +1,4 @@
-This project is meant to accompany this blog post:
+This project is meant to accompany this blog post: http://rustyrazorblade.com/2015/01/introduction-to-spark-cassandra/
 
 Please use it as a reference for this repo.
 
