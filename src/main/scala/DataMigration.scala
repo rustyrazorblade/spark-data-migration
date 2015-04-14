@@ -3,7 +3,6 @@
  *
  */
 
-
 import org.apache.spark.{SparkContext,SparkConf}
 
 import com.datastax.spark.connector._
